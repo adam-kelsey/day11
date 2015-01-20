@@ -1,0 +1,14 @@
+<h1>Edit Page</h1>
+
+<%= form_for @car do |f| %>
+<%= f.label :Make %>
+<%= f.text_field :Make %>
+<%= f.label :Model %>
+<%= f.text_field :Model %>
+<%= f.label :Year %>
+<%= f.text_field :Year %>
+<%= f.label :Color %>
+<%= f.text_field :Color %>
+<br>
+<%= f.submit %>
+<% end %>

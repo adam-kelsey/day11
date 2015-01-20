@@ -1,6 +1,16 @@
 <%= @car.Make %>
+<br>
 <%= @car.Model %>
+<br>
 <%= @car.Year %>
+<br>
 <%= @car.Color %>
+<br>
 
+<br>
+<%= link_to "Edit", edit_car_path(@car) %>
+<br>
+<%= link_to "Delete", car_path(@car), method: :delete %>
+<br>
+<br>
 <%= link_to "Home Page", root_path %>
