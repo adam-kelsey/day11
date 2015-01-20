@@ -1,0 +1,11 @@
+<%= link_to "Add Car", new_car_path %>
+
+<ul>
+<% @cars.each do |car| %>
+    <li><%= car.Make %></li>
+    <li><%= car.Model %></li>
+    <li><%= car.Year %></li>
+    <li><%= car.Color %></li>
+    <%= link_to "Show", car_path(car) %>
+<% end %>
+</ul>
